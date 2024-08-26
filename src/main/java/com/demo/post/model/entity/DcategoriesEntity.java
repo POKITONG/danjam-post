@@ -15,11 +15,4 @@ public class DcategoriesEntity {
     private Long id; // 댓글 고유
 
     private String name;
-
-    @Builder
-    public DcategoriesEntity(Long id , String name){
-        this.id = id;
-        this.name = name;
-
-    }
 }

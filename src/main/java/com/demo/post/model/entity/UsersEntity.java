@@ -40,21 +40,11 @@ public class UsersEntity {
     private String role;
 
     @Column(name = "created_at")
-    @CreationTimestamp
     private LocalDateTime createAt;
 
     @Column(name = "updated_at")
-    @UpdateTimestamp
     private LocalDateTime updateAt;
 
-    @Column(name = "status")
-    @ColumnDefault("Y")
     private String status;
 
-
-    public UsersEntity(String email, String password) {
-        this.email = email;
-        this.password = password;
-        this.role = getRole();
-    }
 }

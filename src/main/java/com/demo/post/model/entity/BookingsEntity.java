@@ -36,7 +36,6 @@ public class BookingsEntity {
     @Column(name = "check_out")
     private LocalDateTime checkOut;
 
-    @ColumnDefault("N")
     private String status;
 
 }

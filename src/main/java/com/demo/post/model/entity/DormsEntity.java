@@ -35,7 +35,6 @@ public class DormsEntity {
     @Column(name = "user_id")
     private Long userId;
 
-    @ColumnDefault("N")
     private String status;
 
 }

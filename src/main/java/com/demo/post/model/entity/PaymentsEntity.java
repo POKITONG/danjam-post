@@ -27,9 +27,8 @@ public class PaymentsEntity {
 
     private LocalDateTime approvedAt;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
-    private UsersEntity usersEntity;
+    @Column(name = "user_id")
+    private Long userId;
 
 
 }
